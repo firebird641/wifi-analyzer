@@ -13,7 +13,7 @@ Scan and analyze WiFi access points with the ESP8266
 esptool.py --port /dev/ttyUSB0 erase_flash
 esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect -fm dio 0 <esp8266-20171101-v1.9.3.bin>
 ~~~
-Replace <esp8266-20171101-v1.9.3.bin> with the latest binary file.
+Replace <esp8266-20171101-v1.9.3.bin> with the latest binary file. Then upload the scanner script:
 ~~~
 ampy --port=/dev/ttyUSB0 put wifi_scanner.py main.py
 ~~~
